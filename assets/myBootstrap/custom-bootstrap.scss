@@ -1,0 +1,21 @@
+@import "scss/functions";
+@import "scss/variables";
+
+$new-spotifyPrimary: #121212;
+$new-spotifySecondary: #1ed660;
+$new-spotifyTertiary: #242424;
+$new-spotifyQuartary: #a7a7a7;
+$new-spotifyQuintary: #fcfcfc;
+
+$new-theme-colors: (
+  "spotifyPrimary": $new-spotifyPrimary,
+  "spotifySecondary": $new-spotifySecondary,
+  "spotifyTertiary": $new-spotifyTertiary,
+  "spotifyQuartary": $new-spotifyQuartary,
+  "spotifyQuintary": $new-spotifyQuintary,
+);
+.insieme {
+  cursor: pointer;
+}
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+@import "scss/bootstrap.scss";
