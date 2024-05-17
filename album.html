@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Spotify - Homepage" />
+    <meta name="author" content="Francesco Giannini" />
+    <title>Spotify - Album</title>
+    <link rel="stylesheet" href="./assets/myBootstrap/custom-bootstrap.css" />
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <main id="albumPage" class="bg-black">
+      <div class="container-fluid">
+        <div class="row">
+          <aside id="asideLeft" class="d-none d-lg-block col-3 p-2">
+            <div
+              class="container-fluid text-spotifyQuartary d-flex flex-column"
+            >
+              <div class="row flex-column mb-2 bg-spotifyPrimary flex-grow-0">
+                <div class="col hoverWhite pointer py-2 px-3">
+                  <div class="d-flex">
+                    <i class="bi bi-house-door"></i>
+                    <p class="ms-2 mb-0 fw-bold">Home</p>
+                  </div>
+                </div>
+
+                <div class="col hoverWhite pointer py-2 px-3">
+                  <div class="d-flex">
+                    <i class="bi bi-search"></i>
+                    <p class="ms-2 mb-0 fw-bold">Cerca</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="library"
+                class="row row-cols-1 bg-spotifyPrimary flex-grow-0"
+              >
+                <div>
+                  <div class="col py-2 px-1">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex hoverWhite pointer">
+                        <i class="bi bi-collection"></i>
+                        <p class="mx-2 mb-0 text-nowrap fw-bold">
+                          La tua libreria
+                        </p>
+                      </div>
+                      <div>
+                        <i class="hoverWhite pointer me-2 bi bi-plus"></i>
+                        <i class="hoverWhite pointer bi bi-heart-arrow"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <button
+                      type="button"
+                      class="btn btn-spotifyTertiary btn-sm rounded-5 my-2"
+                    >
+                      Playlist
+                    </button>
+                  </div>
+                  <div class="col mb-2">
+                    <div>
+                      <div>
+                        <div class="d-flex justify-content-between py-1 px-1">
+                          <div>
+                            <i
+                              class="hoverBgLightDark hoverWhite pointer bi bi-search"
+                            ></i>
+                          </div>
+                          <div class="d-flex hoverTransitionWhite">
+                            <p class="me-2 mb-0">Recenti</p>
+                            <i class="bi bi-list-ul"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/love.jpg"
+                              class="me-2"
+                              alt="Rumba columbia"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Brani che ti piacciono
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <i
+                                class="bi bi-pin-angle-fill text-spotifySecondary me-2"
+                              ></i>
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">150 brani</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Rumba1.jpg"
+                              class="me-2"
+                              alt="Rumba guaguanco"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Rumba Columbia
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Rumba2.webp"
+                              class="me-2"
+                              alt="Rumba columbia"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Rumba Guaguanco
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Rumba3.jpg"
+                              class="me-2"
+                              alt="Rumba yambú"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Rumba Yambú
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Afro1.jpg"
+                              class="me-2"
+                              alt="Afro"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">Afro</h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Merengue1.jpg"
+                              class="me-2"
+                              alt="Merengue"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Merengue
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Salsa1.jpg"
+                              class="me-2"
+                              alt="Salsa Cubana"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Salsa Cubana
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Salsa2.jpg"
+                              class="me-2"
+                              alt="Salsa New York style"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Salsa New York
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Salsa3.jpg"
+                              class="me-2"
+                              alt="Salsa Los Angeles style"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Salsa Los Angeles
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="libraryCard col hoverBgLightDark mb-2">
+                        <div class="d-flex">
+                          <div>
+                            <img
+                              src="./assets/img/Library/Bachata1.jpg"
+                              class="me-2"
+                              alt="Bachata"
+                            />
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <div>
+                              <h6 class="text-nowrap text-white mb-0">
+                                Bachata
+                              </h6>
+                            </div>
+                            <div class="d-flex">
+                              <p class="mb-0">Playlist</p>
+                              <span class="mb-0 mx-1">•</span>
+                              <p class="mb-0">mr_z1m</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <section
+            id="loremIpsum"
+            class="col-12 col-lg-9 col-xl-7 text-bg-spotifyTertiary"
+          >
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="d-none d-sm-flex justify-content-between my-2">
+                      <div class="d-flex">
+                        <i class="bi bi-arrow-left-circle me-1 h4 icon"></i>
+                        <i class="bi bi-arrow-right-circle ms-1 h4 icon"></i>
+                      </div>
+                      <div
+                        class="rounded-pill text-bg-spotifyQuartary d-flex align-items-center justify-content-center p-2 me-4 icon"
+                      >
+                        <img
+                          class="rounded-circle me-2"
+                          width="30px"
+                          src="https://placedog.net/400/400"
+                          alt=""
+                        />
+                        <p class="mb-0 me-1">Keroro</p>
+                        <i class="bi bi-caret-down-fill"></i>
+                      </div>
+                    </div>
+                    <div class="col-1 d-sm-none"></div>
+                    <div class="col-1 ps-3 pt-5 pe-1 d-sm-none">
+                      <i class="bi bi-arrow-left h3 icon d-sm-none"></i>
+                    </div>
+                    <span
+                      class="col-8 d-flex justify-content-center pt-3 col-sm-3"
+                    >
+                      <img
+                        class="img-fluid cover pointer"
+                        src=""
+                        width="400px"
+                      />
+                      <!--qua è da mettere l'immagine principale dell'album-->
+                    </span>
+
+                    <span class="row col-sm-8">
+                      <p class="d-none d-sm-block mb-0 mt-5">ALBUM</p>
+                      <h5 class="col-12 mt-2 col-sm-9 title">Titolo</h5>
+                      <div class="col-2 d-sm-none"></div>
+                      <h5 class="d-none d-sm-block col-8 pointer">
+                        <img
+                          class="rounded-circle me-1 artista"
+                          width="30px"
+                          src=""
+                          alt=""
+                        />
+                        <a
+                          href=""
+                          class="autore link-underline link-underline-opacity-0 text-spotifyQuintary"
+                        ></a>
+                        &middot; <span class="anno"></span> &middot;
+                        <span class="nbrani"></span>,
+                        <span class="durata"></span>
+                      </h5>
+
+                      <!--immagine affianco all'album-->
+                      <div class="d-flex d-sm-none align-items-center mb-2">
+                        <img
+                          width="30px"
+                          class="rounded-circle artista"
+                          src=""
+                          alt=""
+                        />
+                        <a
+                          href=""
+                          class="link-underline link-underline-opacity-0 col-12 d-sm-none ms-1 text-spotifyQuintary autore"
+                          >autore</a
+                        >
+
+                        <p class="col-12 d-sm-none"></p>
+                      </div>
+                      <p class="d-sm-none">
+                        Album &middot; <span class="anno"></span>
+                      </p>
+                    </span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between mb-3 justify-content-sm-start"
+                  >
+                    <div class="order-sm-2 d-flex align-items-center mt-3">
+                      <i class="bi bi-heart m-1 my-2 h2 icon"></i
+                      ><i class="bi bi-arrow-down-circle m-1 my-2 h2 icon"></i
+                      ><i
+                        class="bi bi-three-dots-vertical m-1 my-2 h2 icon d-sm-none"
+                      ></i>
+                      <i
+                        class="bi bi-three-dots m-1 my-2 h2 icon d-none d-sm-block"
+                      ></i>
+                    </div>
+                    <div class="order-sm-1 mt-3">
+                      <i
+                        class="bi bi-arrow-left-right m-1 my-2 h2 icon d-sm-none"
+                      ></i
+                      ><i
+                        class="bi bi-play-circle-fill mx-1 my-2 text-spotifySecondary h1 icon"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-none d-sm-flex align-items-center w-25">
+                      <h5 class="me-1">#</h5>
+                      <h6 class="ms-1">TITOLO</h6>
+                    </div>
+                    <h6 class="d-none d-sm-block">RIPRODUZIONI</h6>
+                    <i
+                      class="d-none d-sm-block bi bi-stopwatch h3 me-4 asideleft"
+                    ></i>
+                  </div>
+                  <div
+                    class="d-none d-sm-block col-12 border-top border-color-primary"
+                  ></div>
+                  <div class="d-flex flex-column music"></div>
+                </div>
+                <div class="col-12 bg-spotifyQuartary d-sm-none">
+                  <div class="d-flex flex-wrap justify-content-between py-3">
+                    <h4 class="m-1 flex-grow-1">ciao</h4>
+                    <div>
+                      <i class="bi bi-speaker m-1 h2 icon"></i>
+                      <i class="bi bi-heart m-1 h2 icon"></i>
+                      <i class="bi bi-play-fill m-1 h2 icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="d-flex flex-wrap justify-content-center text-bg-spotifyPrimary py-2 d-sm-none"
+                  >
+                    <i class="bi bi-house-door-fill m-2 mx-4 h2 icon"></i>
+                    <i class="bi bi-search m-2 mx-4 h2 icon"></i>
+                    <i class="bi bi-collection-fill m-2 mx-4 h2 icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <aside id="asideRight" class="d-none d-xl-block col-2 p-2">
+            <div class="container-fluid text-spotifyQuartary">
+              <div class="row flex-column mb-0 bg-spotifyPrimary">
+                <div class="col py-2 px-3 flex-grow-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h5 class="text-white pointer">Attività amici</h5>
+                    </div>
+                    <div>
+                      <i class="hoverWhite pointer bi bi-person-plus me-2"></i>
+                      <i class="hoverWhite pointer bi bi-x-lg"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex flex-column flex-grow-0">
+                  <div
+                    class="userCard hoverBgLightDark d-flex align-items-center my-4"
+                  >
+                    <div class="me-2">
+                      <img
+                        src="./assets/img/users/John Cena.jpg"
+                        alt="John Cena"
+                        class="rounded-5"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="mb-1">
+                        <h6 class="hoverWhite pointer fw-bold mb-0">
+                          John Cena
+                        </h6>
+                      </div>
+                      <div class="d-flex flex-column mb-1">
+                        <p class="hoverWhite pointer mb-0">
+                          Dammi il tuo piede
+                        </p>
+                      </div>
+                      <div class="hoverWhite pointer d-flex">
+                        <i class="bi bi-record-circle me-2"></i>
+                        <p class="mb-0">Foot &lt;3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="userCard hoverBgLightDark d-flex align-items-center mb-4"
+                  >
+                    <div class="me-2">
+                      <img
+                        src="./assets/img/users/Eddie Guerrero.jpg"
+                        alt="Eddie Guerrero"
+                        class="rounded-5"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="mb-1">
+                        <h6 class="hoverWhite pointer fw-bold mb-0">
+                          Eddie Guerrero
+                        </h6>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <p class="hoverWhite pointer mb-0">O'trerrote</p>
+                      </div>
+                      <div class="d-flex hoverWhite pointer">
+                        <i class="bi bi-record-circle me-2"></i>
+                        <p class="mb-0">Tamarradio</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="userCard hoverBgLightDark d-flex align-items-center mb-4"
+                  >
+                    <div class="me-2">
+                      <img
+                        src="./assets/img/users/Randy Orton.webp"
+                        alt="Randy Orton"
+                        class="rounded-5"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="mb-1">
+                        <h6 class="hoverWhite pointer fw-bold mb-0">
+                          Randy Orton
+                        </h6>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <p class="hoverWhite pointer mb-0">Trapanarella</p>
+                      </div>
+                      <div class="d-flex hoverWhite pointer">
+                        <i class="bi bi-record-circle me-2"></i>
+                        <p class="mb-0">Trash</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    S
+    <footer>
+      <div class="container-fluid bg-black text-spotifyQuartary p-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col">
+            <div class="d-flex align-items-center">
+              <div class="me-3">
+                <img class="d-none" src="" alt="cover canzone" id="coverimg" />
+              </div>
+              <div>
+                <h5
+                  id="playertitle"
+                  class="hoverUnderline pointer text-white mb-0"
+                ></h5>
+                <p id="artistname" class="hoverUnderline pointer mb-0"></p>
+              </div>
+              <div class="ms-3">
+                <i class="hoverWhite pointer bi bi-plus-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="hoverWhite pointer bi bi-shuffle me-3"></i>
+                <i class="hoverWhite pointer bi bi-skip-start-fill me-3"></i>
+                <div id="stopButton" class="me-3">
+                  <i class="text-white pointer bi bi-play-circle-fill"></i>
+                  <i
+                    class="text-white pointer bi bi-pause-circle-fill me-3 d-none"
+                  ></i>
+                </div>
+                <i class="hoverWhite pointer bi bi-skip-end-fill me-3"></i>
+                <i class="hoverWhite pointer bi bi-repeat me-3"></i>
+                <i class="pointer bi bi-repeat-1 d-none clicked"></i>
+              </div>
+              <div class="audio-player d-flex align-items-center">
+                <audio id="audio" src=""></audio>
+                <span id="audioStart" class="me-2">0:00</span>
+                <input type="range" id="seekBar" value="0" />
+                <span id="audioEnd" class="ms-2">5:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col pe-2">
+            <div class="d-flex justify-content-end align-items-center me-3">
+              <i class="hoverWhite pointer bi bi-file-play me-2"></i>
+              <i class="hoverWhite pointer bi bi-body-text me-2"></i>
+              <i class="hoverWhite pointer bi bi-music-note-list me-2"></i>
+              <i class="hoverWhite pointer bi bi-hdd-network me-2"></i>
+              <i class="hoverWhite pointer bi bi-volume-mute me-2 d-none"></i>
+              <i class="hoverWhite pointer bi bi-volume-down me-2 d-none"></i>
+              <i class="hoverWhite pointer bi bi-volume-up me-2"></i>
+              <input
+                type="range"
+                id="volumeBar"
+                class="me-2"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+              />
+              <i class="hoverWhite pointer bi bi-back me-2"></i>
+              <i class="hoverWhite pointer bi bi-fullscreen"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/album.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
